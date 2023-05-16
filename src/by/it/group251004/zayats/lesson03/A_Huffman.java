@@ -131,7 +131,7 @@ public class A_Huffman {
         //У родителя частоты детей складываются.
         //У priorityQueue уже все отсортировано внутри по frequency
 
-        while (priorityQueue.size() > 1) {
+        while (priorityQueue.size() >1) {
             InternalNode parent = new InternalNode(priorityQueue.remove(), priorityQueue.remove());
             priorityQueue.add(parent);
         }

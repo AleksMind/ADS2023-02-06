@@ -83,7 +83,7 @@ public class B_Huffman {
             String[] strArr = scanner.nextLine().split(": ");
             list.add(new Node(strArr[1], strArr[0].charAt(0)));
         }
-        while (list.size() > 1) {
+        while (list.size() >1) {
             Node parent = new Node(list.remove(list.size() - 2), list.remove(list.size() - 1));
             list.add(parent);
         }

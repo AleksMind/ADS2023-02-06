@@ -44,7 +44,7 @@ public class C_HeapMax {
         private List<Long> heap = new ArrayList<>();
 
         void siftDown(int i) { //просеивание вниз
-            int leftChild = 2 * i + 1;
+            int leftChild =2 * i + 1;
             int rightChild = leftChild + 1; //2 * i + 2
             int largest = i;
 
