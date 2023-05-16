@@ -129,7 +129,6 @@ public class A_Huffman {
         //и возвращая этого родителя обратно в очередь
         //построим дерево кодирования Хаффмана.
         //У родителя частоты детей складываются.
-        //У priorityQueue уже все отсортировано внутри по frequency
 
         while (priorityQueue.size() >1) {
             InternalNode parent = new InternalNode(priorityQueue.remove(), priorityQueue.remove());
