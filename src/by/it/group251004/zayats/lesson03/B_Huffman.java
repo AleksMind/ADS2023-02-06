@@ -80,8 +80,8 @@ public class B_Huffman {
     public Node getNode(Integer count, Scanner scanner) {
         ArrayList<Node> list = new ArrayList<>();
         for (int i = 0; i < count; i++) {
-            String[] strArr = scanner.nextLine().split(": ");
-            list.add(new Node(strArr[1], strArr[0].charAt(0)));
+            String[] arrStr = scanner.nextLine().split(": ");
+            list.add(new Node(arrStr[1], arrStr[0].charAt(0)));
         }
         while (list.size() >1) {
             Node parent = new Node(list.remove(list.size() - 2), list.remove(list.size() - 1));
